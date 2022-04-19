@@ -17,7 +17,7 @@
         }
     </style>
 </head>
-<body>
+<body id="sign up">
     <form id="form1" runat="server">
         <div>
             welcom to our Gym , please fill all information.</div>
@@ -25,7 +25,7 @@
             <tr>
                 <td>First Name</td>
                 <td>
-                    <asp:TextBox ID="Txtfirsname" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtFname" runat="server"></asp:TextBox>
                 </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -33,7 +33,7 @@
             <tr>
                 <td>Last Name</td>
                 <td>
-                    <asp:TextBox ID="Txtlastname" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtLname" runat="server"></asp:TextBox>
                 </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -41,7 +41,7 @@
             <tr>
                 <td class="auto-style3">Gender</td>
                 <td class="auto-style3">
-                    <asp:RadioButtonList ID="RadioButtonList1" runat="server" Font-Names="Arial" Font-Size="Small" ForeColor="#000066" RepeatDirection="Horizontal">
+                    <asp:RadioButtonList ID="rblgender" runat="server" Font-Names="Arial" Font-Size="Small" ForeColor="#000066" RepeatDirection="Horizontal">
                         <asp:ListItem Selected="True" Value="M">Male</asp:ListItem>
                         <asp:ListItem Value="F">Female</asp:ListItem>
                     </asp:RadioButtonList>
@@ -52,7 +52,7 @@
             <tr>
                 <td class="auto-style2">phone</td>
                 <td class="auto-style2">
-                    <asp:TextBox ID="Txtphone" runat="server" OnTextChanged="Txtlastname0_TextChanged"></asp:TextBox>
+                    <asp:TextBox ID="txtPhone" runat="server" OnTextChanged="Txtlastname0_TextChanged"></asp:TextBox>
                 </td>
                 <td class="auto-style2"></td>
                 <td class="auto-style2"></td>
@@ -60,7 +60,7 @@
             <tr>
                 <td>Email</td>
                 <td>
-                    <asp:TextBox ID="TxtEmail" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
                 </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -68,7 +68,7 @@
             <tr>
                 <td class="auto-style2">username</td>
                 <td class="auto-style2">
-                    <asp:TextBox ID="Txtusername" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtUsername" runat="server"></asp:TextBox>
                 </td>
                 <td class="auto-style2"></td>
                 <td class="auto-style2"></td>
@@ -76,7 +76,7 @@
             <tr>
                 <td>area</td>
                 <td>
-                    <asp:DropDownList ID="DropDownList1" runat="server" Width="161px">
+                    <asp:DropDownList ID="ddlArea" runat="server" Width="161px">
                         <asp:ListItem>new cairo</asp:ListItem>
                         <asp:ListItem>nasr city</asp:ListItem>
                         <asp:ListItem>Alabasia</asp:ListItem>
@@ -90,7 +90,7 @@
             <tr>
                 <td class="auto-style2">password</td>
                 <td class="auto-style2">
-                    <asp:TextBox ID="Txtpassword" runat="server" TextMode="Password"></asp:TextBox>
+                    <asp:TextBox ID="txtPassword" runat="server" TextMode="Password"></asp:TextBox>
                 </td>
                 <td class="auto-style2"></td>
                 <td class="auto-style2"></td>
@@ -107,11 +107,11 @@
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
-                <td>&nbsp;</td>
+       &nbsp;</td>
             </tr>
             <tr>
                 <td>
-                    <asp:Button ID="Button1" runat="server" Font-Names="Arial" Font-Size="Small" Text="Sign Up" />
+                    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Sign up" />
                 </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
